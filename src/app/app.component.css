@@ -1,0 +1,32 @@
+
+.main-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 12fr 1fr;
+    text-align:center;
+    font-size: 25px;
+}
+
+.row-one,
+.row-two,
+.row-three {
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr;
+}
+
+/* .row-two {
+    background-color: #ee8905;
+
+} */
+
+/* .row three {} */
+/* .container-padding{
+    margin: 12px;
+    border: 1px dashed #ffffff;
+} */
+/* .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  } */

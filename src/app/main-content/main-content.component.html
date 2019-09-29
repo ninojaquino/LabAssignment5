@@ -1,0 +1,35 @@
+<div class="row-two">
+    <div class="container-padding">
+        r2c1
+        <img src="https://i.pinimg.com/originals/8d/90/8a/8d908ae4bb456d5e864b5346affe6070.gif"
+            style="width:225px;height:300px;">
+    </div>
+    <div class="container-padding">
+        Hover mouse on top center box
+        <br>
+        <button (click)="addStudent()" class="add-button">Add Student</button>
+        <table class="table-one">
+            <thead>
+                <tr>
+                    <td>ID:</td>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Courses</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of students">
+                    <td>{{student.id}}</td>
+                    <td>{{student.firstName}}</td>
+                    <td>{{student.lastName}}</td>
+                    <td>{{student.course}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="container-padding">
+        r2c3
+        <img src="https://i.pinimg.com/originals/8d/90/8a/8d908ae4bb456d5e864b5346affe6070.gif"
+            style="width:225px;height:300px;">
+    </div>
+</div>

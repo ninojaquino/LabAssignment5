@@ -1,0 +1,5 @@
+.row-one{
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr;
+    height:100%;
+}
