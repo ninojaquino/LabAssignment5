@@ -4,3 +4,7 @@
     background-color: #ee8905;
     height:100%;
 }
+
+.pull-right{
+    float: right;
+}
