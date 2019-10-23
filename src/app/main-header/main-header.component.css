@@ -1,5 +1,17 @@
 .row-one{
     display: grid;
-    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-columns: 1fr
+  
+}
+.full {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+}
+
+.nav-buttons {
+    margin-right: 10px;
+}
+
+.toolbar{
     height:100%;
 }

@@ -1,20 +1,9 @@
 <div class="row-two">
     <div class="container-padding">
         r2c1
-        <img src="https://i.pinimg.com/originals/8d/90/8a/8d908ae4bb456d5e864b5346affe6070.gif"
-            style="width:225px;height:300px;">
     </div>
     <div class="container-padding">
-        <!-- Hover mouse on top center box
-        <br> -->
-        <!-- <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button> -->
-        <!-- <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-dark">Dark</button> -->
-        <table class="table">
+        <!-- <table class="table">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID</th>
@@ -23,8 +12,13 @@
                     <th scope="col">Courses</th>
                     <th>
                         <div class="btn-group pull-right">
-                            <button type="button" class="btn btn-success" (click)="saveStudent()">Save</button>
-                            <button type="button" class="btn btn-info" [disabled]="disableAddButton" (click)="addStudent()">Add</button>
+                            <button type="button" mat-raised-button color="accent" (click)="saveStudent()">
+                                <mat-icon>save_alt</mat-icon>
+                            </button>
+                            <button type="button" mat-raised-button color="warn" [disabled]="disableAddButton"
+                                (click)="addStudent()">
+                                <mat-icon>create</mat-icon>
+                            </button>
                         </div>
                     </th>
                 </tr>
@@ -40,7 +34,8 @@
                         <input [(ngModel)]="student.id" type="text" class="form-control" placeholder="ID">
                     </th>
                     <td *ngIf="student.editMode">
-                        <input [(ngModel)]="student.firstName" type="text" class="form-control" placeholder="First Name">
+                        <input [(ngModel)]="student.firstName" type="text" class="form-control"
+                            placeholder="First Name">
                     </td>
                     <td *ngIf="student.editMode">
                         <input [(ngModel)]="student.lastName" type="text" class="form-control" placeholder="Last Name">
@@ -49,16 +44,19 @@
                         <input [(ngModel)]="student.course" type="text" class="form-control" placeholder="Course">
                     </td>
 
-                    <td><button type="button" class="btn btn-danger pull-right" (click)="removeStudent(i)">X</button>
+                    <td>
+                        <button type="button" class="pull-right" mat-raised-button color="warn"
+                            (click)="removeStudent(i)">
+                            <mat-icon>delete_sweep</mat-icon>
+                        </button>
                     </td>
                 </tr>
 
             </tbody>
-        </table>
+        </table> -->
+        <router-outlet class="main-outlet"></router-outlet>
     </div>
     <div class="container-padding">
         r2c3
-        <img src="https://i.pinimg.com/originals/8d/90/8a/8d908ae4bb456d5e864b5346affe6070.gif"
-            style="width:225px;height:300px;">
     </div>
 </div>

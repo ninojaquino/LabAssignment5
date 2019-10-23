@@ -1,5 +1,5 @@
 <div class="row-one">
-    <div class="container-padding">
+    <!-- <div class="container-padding">
         <img src="http://pluspng.com/img-png/dragon-ball-png-five-star-dragon-ball-png-306.png"
             style="width:100px;height:100px;" class="center">
     </div>
@@ -10,4 +10,22 @@
         <img src="http://pluspng.com/img-png/dragon-ball-png-five-star-dragon-ball-png-306.png"
             style="width:100px;height:100px;" class="center">
     </div>
-</div>
+</div> -->
+    <mat-toolbar color="accent" class="toolbar">
+        <mat-toolbar-row class="row-one full">
+            <div class="container-padding">
+                <span>r1c1</span>
+            </div>
+            <div id="r1c2" class="container-padding">
+                <button (click)="navigateTo('')" class="nav-buttons" type="button" mat-raised-button color="primary">
+                    Home
+                </button>
+                <button (click)="navigateTo('courses')" class="nav-buttons" type="button" mat-raised-button color="primary">
+                    Courses
+                </button>
+            </div>
+            <div class="container-padding">
+                <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
